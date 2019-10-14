@@ -60,7 +60,7 @@ We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dumm
    mkdir wave_files/test/theo
    ```
 6. Run `put_users_to_folders.py` in order to distribute the audio files.
-7. Run `ln -s ../wsj/s5/utils/ .` to create a symbolic links to the kaldi utilities. After that run `cp ../wsj/s5/path.sh .`.
+7. Run `ln -s ../wsj/s5/utils/ .` to create a symbolic links to the kaldi utilities. After that run `cp ../wsj/s5/path.sh .`. We also need to create a symbolic link to the `steps` folder. Do that by `ln -s ../wsj/s5/steps/ .`. We will need those later.
 8. Run `mkdir data` and then `mkdir data/train` and `mkdir data/test`
 9. Create a `spk2gender` file as shown in this repo and copy it to both `data/train` and `data/test`.
 10. Run `create_train_wavscp.py full_path_to_train`. For me `full_path_to_train` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/train`. Then  run `create_test_wavscp.py full_path_to_test`. For me `full_path_to_test` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/test`. After running those two you should see 1800 lines in `data/train/wav.scp` and 200 lines in `data/test/wav.scp`.
@@ -72,4 +72,54 @@ We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dumm
 We have created the main structure that is based solely on our data. Now, we will create language related data. Steps:
 
 1. Create a new directory `dict`. Execute: `mkdir ./data/local/dict`
-2. In that directory create a new `lexicon.txt`which contains all the words in our dictionary and their phoneme transcriptions. If you have another, more complex, dataset then I highly reccommend [the CMU sphinx acoustic and language models](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/). In our case, our lexicon is really small and we are going to copy only the 10 words we have plus a silence phoneme and an OOV (out of vocabulary) words phoneme. Check the `lexicon.txt` in this repo in order to see how it should look like.
+2. In that directory create a new `lexicon.txt`which contains all the words in our dictionary and their phoneme transcriptions. If you have another, more complex, dataset then I highly reccommend [the CMU sphinx acoustic and language models](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/). In our case, our lexicon is really small and we are going to copy only the 10 words we have plus a silence phoneme and an OOV (out of vocabulary) words phoneme. Check the `lexicon.txt` in this repo in order to see how it should look like. Since we follow the Kaldi for dummies tutorial, we are also going to use the lexicon used in `/egs/voxforge`.
+3. Create `nonsilence_phones.txt`. This file consists of the nonsilence phones that are present in our data.
+4. Create `silence_phones.txt`. This consists of the silence phones (which is either silence or OOV words).
+5. Create `optional_silence.txt`. Optional silence phones (only `sil` in our case).
+
+## Final Steps
+1. Install a language modelling toolkit: 
+    * We will use the SRI Language Modeling Toolkit (SRILM). For installation see `kaldi/tools/install_srilm.sh`. 
+    * In order to download SRILM go to [their website](http://www.speech.sri.com/projects/srilm/download.html), fill the download form and you will be able to download a `.tar.gz` file (tarball).
+    * Copy this file in `kaldi/tools`
+    * Go to the `kaldi/tools` directory.
+    * Run `./install_srilm.sh`. Make sure that you have followed the steps above and that the installtion was succesful before doing that (otherwise you will get an error).
+    * Make sure that you have `GNU awk` installed (`sudo apt-get install gawk`).
+2. From `kaldi/egs/voxforge/s5/local` copy the script `score.sh` into `kaldi/egs/myfsdd/local`. So, at first create a `local` dir by `mkdir local` and then `cp ../vocforge/s5/local/score.sh ./local/` 
+3. Create configuration files:
+    * Go back to `kaldi/egs/myfsdd`.
+    * Create a new directory `conf`.
+    * Create the following two files inside `conf`:
+        - decode.config:
+            ```
+            first_beam=10.0
+            beam=13.0
+            lattice_beam=6.0
+            ```
+        - mfcc.conf:
+            ```
+            --use-energy=false
+            ```
+4. Create running scripts. We will use 2 training methods: MONE (monophone training) and TRI1(simple triphone training (first triphone pass):
+    * In `kaldi/egs/myfsdd` create the following:
+        - `cmd.sh`:
+            ```
+            # Setting local system jobs (local CPU - no external clusters)
+            export train_cmd=run.pl
+            export decode_cmd=run.pl
+            ```
+        - `path.sh`:
+            ```
+            # Defining Kaldi root directory
+            export KALDI_ROOT=`pwd`/../..
+            # Setting paths to useful tools
+            export PATH=$PWD/utils/:$KALDI_ROOT/src/bin:$KALDI_ROOT/tools/openfst/bin:$KALDI_ROOT/src/fstbin/:$KALDI_ROOT/src/gmmbin/:$KALDI_ROOT/src/featbin/:$KALDI_ROOT/src/lmbin/:$KALDI_ROOT/src/sgmm2bin/:$KALDI_ROOT/src/fgmmbin/:$KALDI_ROOT/src/latbin/:$PWD:$PATH
+            # Defining audio data directory (modify it for your installation directory!)
+            export DATA_ROOT="/home/{user}/kaldi/egs/digits/digits_audio"
+            # Enable SRILM
+            . $KALDI_ROOT/tools/env.sh
+            # Variable needed for proper data sorting
+            export LC_ALL=C
+            ```
+        - `run.sh` (look at the `run.sh` file in this repo)
+5. 
