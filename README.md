@@ -64,4 +64,6 @@ We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dumm
 8. Run `mkdir data` and then `mkdir data/train` and `mkdir data/test`
 9. Create a `spk2gender` file as shown in this repo.
 10. Run `create_train_wavscp.py full_path_to_train`. For me `full_path_to_train` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/train`. Then  run `create_test_wavscp.py full_path_to_test`. For me `full_path_to_test` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/test`. After running those two you should see 1800 lines in `data/train/wav.scp` and 200 lines in `data/test/wav.scp`.
+11. Copy `number_transcript.py` to your current working directory and then run the `create_train_text.py` and `create_test_text.py` with an argument `full_path_to_train` and `full_path_to_test` as before. (e.g. `create_train_text.py /home/geoph/v2t/kaldi/egs/myfsdd/data/test`. This will create a `text` file in `./data/train` and `./data/test/`. The format of the text file is `utteranceID number` (e.g. `0_jackson_12 zero`)
+
 
