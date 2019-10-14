@@ -122,4 +122,7 @@ We have created the main structure that is based solely on our data. Now, we wil
             export LC_ALL=C
             ```
         - `run.sh` (look at the `run.sh` file in this repo)
-5. 
+5. Execute `run.sh`. This file is a copy-paste from the kaldi-for-dummies tutorial. If anything unexpected happens see the messages from the logs.
+6. The above command shall create and new directory `exp`. From the tutorial:  
+    > You may notice there folders with mono and tri1 results as well - directories structure are the same. Go to mono/decode directory. Here you may find result files (named in a wer_{number} way). Logs for decoding process may be found in log folder (same directory).
+
