@@ -71,8 +71,7 @@ We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dumm
     ``` For the train data
     cat data/train/wav.scp | cut -f 1 -d ' ' | \ 
     perl -ane 'chomp; @F = split "-", $_; print $_ . " " . @F[0] . "\n";' > data/train/utt2spk
-    ```
-    ``` For the test data
+	For the test data
      cat data/test/wav.scp | cut -f 1 -d ' ' | perl -ane 'chomp; @F = split "-", $_; print $_ . " " . @F[0] . "\n";' > data/test/utt2spk
     ```
     
@@ -139,9 +138,8 @@ We have created the main structure that is based solely on our data. Now, we wil
     > You may notice there folders with mono and tri1 results as well - directories structure are the same. Go to mono/decode directory. Here you may find result files (named in a wer_{number} way). Logs for decoding process may be found in log folder (same directory).
 
 **NOTE: ** I am using a Linux Debian subsystem in Windows 10. The PATH variable contained some broken paths that wrongly used windows paths. For me, this solved this:
-`export PATH_TEMP=$PATH_TEMP:/home/geoph/v2t/kaldi/egs/mydata/../../src/bin:/home/geoph/v2t/kaldi/egs/mydata/../../src/chainbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/featbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/fgmmbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/fstbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/gmmbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/ivectorbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/kwsbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/latbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/lmbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/nnet2bin:/home/geoph/v2t/kaldi/egs/mydata/../../src/nnet3bin:/home/geoph/v2t/kaldi/egs/mydata/../../src/nnetbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/online2bin:/home/geoph/v2t/kaldi/egs/mydata/../../src/onlinebin:/home/geoph/v2t/kaldi/egs/mydata/../../src/rnnlmbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/sgmm2bin:/home/geoph/v2t/kaldi/egs/mydata/../../src/sgmmbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/tfrnnlmbin:/home/geoph/v2t/kaldi/egs/mydata/../../src/cudadecoderbin:/home/geoph/v2t/kaldi/egs/mydata/utils/:/home/geoph/v2t/kaldi/egs/mydata/../../tools/openfst/bin:/home/geoph/v2t/kaldi/egs/mydata:/home/geoph/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/mnt/d/libnvvp:/mnt/c/Windows/System32:/mnt/c/Windows:/mnt/c/Windows/System32/wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0:/mnt/c/Windows/System32/OpenSSH:/mnt/c/Users/g.karakasidis.SIEBEN/.dnx/bin:/mnt/c/Users/g.karakasidis.SIEBEN/AppData/Local/Programs/Python/Python37-32/Scripts:/mnt/c/Users/g.karakasidis.SIEBEN/AppData/Local/Programs/Python/Python36:/mnt/c/Users/g.karakasidis.SIEBEN/AppData/Local/cuda:/mnt/c/Users/g.karakasidis.SIEBEN/AppData/Local/cuda/bin:/mnt/c/Users/g.karakasidis.SIEBEN/AppData/Local/Continuum/anaconda3/Scripts:/mnt/d/cmake-3.15.3-win64-x64/bin:/mnt/d/swigwin-4.0.1:/mnt/d/sox-14.4.2:/mnt/c/msys64/mingw64:/mnt/c/msys64/usr/bin:/mnt/c/Users/g.karakasidis.SIEBEN/AppData/Local/Programs/Python/Python36/Scripts:/mnt/c/Users/g.karakasidis.SIEBEN/AppData/Local/Programs/Python/Python36:/home/geoph/.local/bin:/home/geoph/v2t/kaldi/tools/irstlm/bin`
-where `g.karakasidis.SIEBEN` is my user account in Windows and `geoph` is my username in the subsystem.
-Execute the above command before the `run.sh`. In order to accept it go to `path.sh` and change `$PATH` to `$PATH_TEMP` (this export will only word for the current session). 
+`export PATH_TEMP=$PATH_TEMP:...` where with the 3 dots I denote the PATH variable as it would appear if you ran echo PATH but you should delete all the Windows files (the ones that start with `C:\Users\...`.
+Execute the above command before the `run.sh`. In order to accept it go to `path.sh` and change `$PATH` to `$PATH_TEMP` (this export will only last for the current session). 
 
 # Test trained model
 Let's say we have a new audio file `audio.wav`. This must be a mono channel 8Khz audio file. In order to convert it, we will use SoX. At first make sure whether there is a need to change the above with `soxi audio.wav`. If *Channels* is 1 and *Sample Rate* is 8000 then we are ok. Otherwise, use `sox -t wav audio.wav -c 1 -r 8000 -t wav > audio.wav`.
