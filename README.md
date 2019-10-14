@@ -37,4 +37,31 @@ Metadata as of 14th of October 2019:
         'accent': 'DEU/German',
         'language': 'english'
       }
-  }```
+  }
+  ```
+
+## Steps
+
+We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dummies.html) tutorial steps. We assume an already installed kaldi system. (A basic prerequisite is that you are also using a Linux system. I am using a Linux subsystem inside my Windows 10 distribution.)
+
+1. Clone the [FSDD](https://github.com/Jakobovski/free-spoken-digit-dataset) repository somewhere locally (I cloned it at `~/github`).
+2. Go to `kaldi/egs` directory and create a new directory. I will be using the name `myfsdd`.
+3. Copy the `recordings` directory of the github repo above in the `myfsdd` and rename it to `wave_files`.
+4. Use the `split_train_test.py` script in order to split into train and test (as mentioned above).
+5. Create 4 subdirectories in each of the `train` and `test` directories with the names of the speakers (yweweler, nicholas, jackson, theo):
+   ```
+   mkdir wave_files/train/nicolas
+   mkdir wave_files/train/yweweler
+   mkdir wave_files/train/jackson
+   mkdir wave_files/train/theo
+   mkdir wave_files/test/nicolas
+   mkdir wave_files/test/yweweler
+   mkdir wave_files/test/jackson
+   mkdir wave_files/test/theo
+   ```
+6. Run `put_users_to_folders.py` in order to distribute the audio files.
+7. Run `ln -s ../wsj/s5/utils/ .` to create a symbolic links to the kaldi utilities. After that run `cp ../wsj/s5/path.sh .`.
+8. Run `mkdir data` and then `mkdir data/train` and `mkdir data/test`
+9. Create a `spk2gender` file as shown in this repo.
+10. Run `create_train_wavscp.py full_path_to_train`. For me `full_path_to_train` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/train`. Then  run `create_test_wavscp.py full_path_to_test`. For me `full_path_to_test` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/test`. After running those two you should see 1800 lines in `data/train/wav.scp` and 200 lines in `data/test/wav.scp`.
+
