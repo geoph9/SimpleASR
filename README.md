@@ -68,3 +68,8 @@ We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dumm
 12. Next step is to create a `utt2spk` file in both `data/train` and `data/test`. For this, run `python create_utt2spk.py [train/test]`. Do this twice once with `train` and with `test` (i.e. `python create_utt2spk.py train` and `python create_utt2spk.py test`)
 13. Now, we need to create the `corpus.txt` file that contains our corpus (numbers from 0 to 9). **NOTE:** This stored in a new directory `./data/local/` which you need to create (`mkdir ./data/local`). Since in each audio file we only have one number, it is really easy to create this file by hand. Check the `corpus.txt` in this repo.
 
+## Language Modelling
+We have created the main structure that is based solely on our data. Now, we will create language related data. Steps:
+
+1. Create a new directory `dict`. Execute: `mkdir ./data/local/dict`
+2. In that directory create a new `lexicon.txt`which contains all the words in our dictionary and their phoneme transcriptions. If you have another, more complex, dataset then I highly reccommend [the CMU sphinx acoustic and language models](https://sourceforge.net/projects/cmusphinx/files/Acoustic%20and%20Language%20Models/). In our case, our lexicon is really small and we are going to copy only the 10 words we have plus a silence phoneme and an OOV (out of vocabulary) words phoneme. Check the `lexicon.txt` in this repo in order to see how it should look like.
