@@ -68,7 +68,8 @@ We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dumm
 12. Next step is to create a `utt2spk` file in both `data/train` and `data/test`. For this, run `python create_utt2spk.py [train/test]`. Do this twice once with `train` and with `test` (i.e. `python create_utt2spk.py train` and `python create_utt2spk.py test`)
 > Instead of the above use the below version which provides sorted output:
 
-    ``` For the train data
+    ``` 
+	For the train data
     cat data/train/wav.scp | cut -f 1 -d ' ' | \ 
     perl -ane 'chomp; @F = split "-", $_; print $_ . " " . @F[0] . "\n";' > data/train/utt2spk
 	For the test data
