@@ -1,0 +1,48 @@
+# gmm-acc-stats-ali exp/mono/3.mdl "ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |" "ark:gunzip -c exp/mono/ali.1.gz|" exp/mono/3.1.acc 
+# Started at Mon Oct 14 16:02:02 DST 2019
+#
+gmm-acc-stats-ali exp/mono/3.mdl 'ark,s,cs:apply-cmvn  --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- | add-deltas  ark:- ark:- |' 'ark:gunzip -c exp/mono/ali.1.gz|' exp/mono/3.1.acc 
+apply-cmvn --utt2spk=ark:data/train/split1/1/utt2spk scp:data/train/split1/1/cmvn.scp scp:data/train/split1/1/feats.scp ark:- 
+add-deltas ark:- ark:- 
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 50 utterances; for utterance jackson-1-14 avg. like is -96.7644 over 66 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 100 utterances; for utterance jackson-2-19 avg. like is -98.717 over 50 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 150 utterances; for utterance jackson-3-24 avg. like is -96.3823 over 41 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 200 utterances; for utterance jackson-4-29 avg. like is -94.5073 over 42 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 250 utterances; for utterance jackson-5-34 avg. like is -91.6133 over 34 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 300 utterances; for utterance jackson-6-39 avg. like is -97.0975 over 64 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 350 utterances; for utterance jackson-7-44 avg. like is -96.6375 over 49 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 400 utterances; for utterance jackson-8-49 avg. like is -94.8161 over 45 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 450 utterances; for utterance jackson-9-9 avg. like is -94.5635 over 52 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 500 utterances; for utterance nicolas-1-14 avg. like is -91.5205 over 30 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 550 utterances; for utterance nicolas-2-19 avg. like is -91.8413 over 23 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 600 utterances; for utterance nicolas-3-24 avg. like is -88.6218 over 21 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 650 utterances; for utterance nicolas-4-29 avg. like is -87.3747 over 31 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 700 utterances; for utterance nicolas-5-34 avg. like is -87.3725 over 31 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 750 utterances; for utterance nicolas-6-39 avg. like is -96.8254 over 16 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 800 utterances; for utterance nicolas-7-44 avg. like is -92.1093 over 34 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 850 utterances; for utterance nicolas-8-49 avg. like is -90.5523 over 38 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 900 utterances; for utterance nicolas-9-9 avg. like is -89.1571 over 42 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 950 utterances; for utterance theo-1-14 avg. like is -89.6326 over 23 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1000 utterances; for utterance theo-2-19 avg. like is -90.2995 over 46 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1050 utterances; for utterance theo-3-24 avg. like is -110.518 over 37 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1100 utterances; for utterance theo-4-29 avg. like is -104.96 over 27 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1150 utterances; for utterance theo-5-34 avg. like is -88.1758 over 46 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1200 utterances; for utterance theo-6-39 avg. like is -95.0671 over 41 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1250 utterances; for utterance theo-7-44 avg. like is -94.209 over 44 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1300 utterances; for utterance theo-8-49 avg. like is -98.8176 over 29 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1350 utterances; for utterance theo-9-9 avg. like is -91.0781 over 40 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1400 utterances; for utterance yweweler-1-14 avg. like is -91.1681 over 27 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1450 utterances; for utterance yweweler-2-19 avg. like is -101.21 over 23 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1500 utterances; for utterance yweweler-3-24 avg. like is -95.3212 over 26 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1550 utterances; for utterance yweweler-4-29 avg. like is -96.3788 over 34 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1600 utterances; for utterance yweweler-5-34 avg. like is -94.8703 over 62 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1650 utterances; for utterance yweweler-6-39 avg. like is -97.3723 over 32 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1700 utterances; for utterance yweweler-7-44 avg. like is -91.8768 over 44 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1750 utterances; for utterance yweweler-8-49 avg. like is -96.175 over 23 frames.
+LOG (apply-cmvn[5.5.510~1-68cfb]:main():apply-cmvn.cc:162) Applied cepstral mean normalization to 1800 utterances, errors on 0
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:105) Processed 1800 utterances; for utterance yweweler-9-9 avg. like is -94.6019 over 42 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:112) Done 1800 files, 0 with errors.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:115) Overall avg like per frame (Gaussian only) = -94.7742 over 69280 frames.
+LOG (gmm-acc-stats-ali[5.5.510~1-68cfb]:main():gmm-acc-stats-ali.cc:123) Written accs.
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Oct 14 16:02:03 DST 2019, elapsed time 1 seconds

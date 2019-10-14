@@ -1,0 +1,408 @@
+# lattice-best-path --lm-scale=13 --word-symbol-table=exp/tri1/graph/words.txt "ark:gunzip -c exp/tri1/decode/lat.*.gz|" ark,t:exp/tri1/decode/scoring/13.tra 
+# Started at Mon Oct 14 16:06:50 DST 2019
+#
+lattice-best-path --lm-scale=13 --word-symbol-table=exp/tri1/graph/words.txt 'ark:gunzip -c exp/tri1/decode/lat.*.gz|' ark,t:exp/tri1/decode/scoring/13.tra 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-0-0, best cost 156.973 + 5945.47 = 6102.45 over 62 frames.
+jackson-0-0 zero one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-0-1, best cost 97.4831 + 4799.06 = 4896.54 over 51 frames.
+jackson-0-1 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-0-2, best cost 97.9503 + 4627.34 = 4725.29 over 51 frames.
+jackson-0-2 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-0-3, best cost 106.245 + 5070.17 = 5176.41 over 58 frames.
+jackson-0-3 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-0-4, best cost 98.131 + 4620.84 = 4718.97 over 52 frames.
+jackson-0-4 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-1-0, best cost 103.653 + 4926.29 = 5029.94 over 50 frames.
+jackson-1-0 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-1-1, best cost 107.286 + 4752.06 = 4859.35 over 51 frames.
+jackson-1-1 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-1-2, best cost 101.37 + 4307.05 = 4408.42 over 46 frames.
+jackson-1-2 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-1-3, best cost 100.664 + 4499.72 = 4600.39 over 48 frames.
+jackson-1-3 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-1-4, best cost 102.883 + 5097.29 = 5200.17 over 51 frames.
+jackson-1-4 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-2-0, best cost 89.1666 + 4271.21 = 4360.37 over 48 frames.
+jackson-2-0 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-2-1, best cost 90.046 + 4657.99 = 4748.04 over 53 frames.
+jackson-2-1 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-2-2, best cost 88.1463 + 4090.58 = 4178.72 over 42 frames.
+jackson-2-2 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-2-3, best cost 88.0985 + 4812.3 = 4900.39 over 48 frames.
+jackson-2-3 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-2-4, best cost 88.9153 + 4193.62 = 4282.54 over 46 frames.
+jackson-2-4 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-3-0, best cost 94.3089 + 4432.36 = 4526.67 over 47 frames.
+jackson-3-0 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-3-1, best cost 99.4936 + 4232.35 = 4331.85 over 45 frames.
+jackson-3-1 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-3-2, best cost 95.4572 + 4297.28 = 4392.74 over 49 frames.
+jackson-3-2 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-3-3, best cost 96.2385 + 4475.48 = 4571.71 over 49 frames.
+jackson-3-3 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-3-4, best cost 94.8554 + 3870.47 = 3965.33 over 43 frames.
+jackson-3-4 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-4-0, best cost 99.419 + 4146.82 = 4246.24 over 44 frames.
+jackson-4-0 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-4-1, best cost 88.2515 + 3621.14 = 3709.39 over 40 frames.
+jackson-4-1 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-4-2, best cost 91.2174 + 3666.66 = 3757.88 over 40 frames.
+jackson-4-2 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-4-3, best cost 89.2326 + 3598.76 = 3687.99 over 39 frames.
+jackson-4-3 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-4-4, best cost 96.3332 + 3765.98 = 3862.32 over 41 frames.
+jackson-4-4 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-5-0, best cost 95.7678 + 3521.15 = 3616.91 over 40 frames.
+jackson-5-0 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-5-1, best cost 93.9291 + 3476.9 = 3570.83 over 39 frames.
+jackson-5-1 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-5-2, best cost 96.6923 + 3916.78 = 4013.47 over 43 frames.
+jackson-5-2 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-5-3, best cost 95.2705 + 3359.7 = 3454.97 over 38 frames.
+jackson-5-3 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-5-4, best cost 105.671 + 4813.7 = 4919.38 over 51 frames.
+jackson-5-4 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-6-0, best cost 122.453 + 7636.53 = 7758.99 over 81 frames.
+jackson-6-0 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-6-1, best cost 102.999 + 6407 = 6510 over 62 frames.
+jackson-6-1 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-6-2, best cost 101.778 + 5474.53 = 5576.31 over 61 frames.
+jackson-6-2 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-6-3, best cost 123.061 + 7987.76 = 8110.82 over 85 frames.
+jackson-6-3 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-6-4, best cost 103.788 + 5728.93 = 5832.72 over 61 frames.
+jackson-6-4 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-7-0, best cost 100.347 + 3788.95 = 3889.3 over 41 frames.
+jackson-7-0 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-7-1, best cost 103.971 + 3906.36 = 4010.33 over 45 frames.
+jackson-7-1 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-7-2, best cost 96.479 + 3319.98 = 3416.46 over 36 frames.
+jackson-7-2 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-7-3, best cost 98.9465 + 3501.07 = 3600.02 over 41 frames.
+jackson-7-3 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-7-4, best cost 99.3737 + 3876.71 = 3976.08 over 40 frames.
+jackson-7-4 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-8-0, best cost 91.9932 + 2962.35 = 3054.35 over 33 frames.
+jackson-8-0 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-8-1, best cost 86.6252 + 3497.37 = 3584 over 38 frames.
+jackson-8-1 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-8-2, best cost 90.0247 + 3452.52 = 3542.55 over 36 frames.
+jackson-8-2 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-8-3, best cost 87.7369 + 3552.11 = 3639.85 over 37 frames.
+jackson-8-3 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-8-4, best cost 86.0959 + 3591.14 = 3677.24 over 39 frames.
+jackson-8-4 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-9-0, best cost 99.3753 + 5197.12 = 5296.5 over 58 frames.
+jackson-9-0 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-9-1, best cost 98.6831 + 5023.06 = 5121.75 over 55 frames.
+jackson-9-1 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-9-2, best cost 132.891 + 5021.09 = 5153.98 over 56 frames.
+jackson-9-2 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-9-3, best cost 132.634 + 4685.39 = 4818.03 over 52 frames.
+jackson-9-3 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance jackson-9-4, best cost 132.915 + 4796.68 = 4929.59 over 56 frames.
+jackson-9-4 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-0-0, best cost 91.7237 + 3868.44 = 3960.16 over 42 frames.
+nicolas-0-0 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-0-1, best cost 90.2265 + 3910.02 = 4000.25 over 45 frames.
+nicolas-0-1 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-0-2, best cost 91.7982 + 2962.1 = 3053.9 over 34 frames.
+nicolas-0-2 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-0-3, best cost 95.963 + 4394.08 = 4490.04 over 53 frames.
+nicolas-0-3 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-0-4, best cost 91.563 + 4147.71 = 4239.28 over 47 frames.
+nicolas-0-4 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-1-0, best cost 97.9676 + 2976.08 = 3074.05 over 35 frames.
+nicolas-1-0 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-1-1, best cost 92.6044 + 1964.31 = 2056.92 over 27 frames.
+nicolas-1-1 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-1-2, best cost 90.1588 + 1977.79 = 2067.95 over 24 frames.
+nicolas-1-2 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-1-3, best cost 92.2545 + 2195.07 = 2287.32 over 27 frames.
+nicolas-1-3 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-1-4, best cost 91.8532 + 2093.19 = 2185.05 over 27 frames.
+nicolas-1-4 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-2-0, best cost 91.7863 + 2886.23 = 2978.02 over 34 frames.
+nicolas-2-0 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-2-1, best cost 95.7758 + 2458.71 = 2554.48 over 28 frames.
+nicolas-2-1 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-2-2, best cost 92.4019 + 2809.1 = 2901.5 over 34 frames.
+nicolas-2-2 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-2-3, best cost 83.9542 + 1711.15 = 1795.11 over 22 frames.
+nicolas-2-3 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-2-4, best cost 91.6005 + 2549.84 = 2641.44 over 31 frames.
+nicolas-2-4 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-3-0, best cost 96.0748 + 2685.24 = 2781.31 over 31 frames.
+nicolas-3-0 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-3-1, best cost 93.862 + 2511.77 = 2605.63 over 31 frames.
+nicolas-3-1 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-3-2, best cost 85.5158 + 1916.93 = 2002.45 over 24 frames.
+nicolas-3-2 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-3-3, best cost 83.7342 + 1632.58 = 1716.31 over 22 frames.
+nicolas-3-3 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-3-4, best cost 98.091 + 2819.08 = 2917.17 over 34 frames.
+nicolas-3-4 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-4-0, best cost 88.7714 + 2364.45 = 2453.23 over 29 frames.
+nicolas-4-0 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-4-1, best cost 95.1705 + 2967.57 = 3062.74 over 33 frames.
+nicolas-4-1 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-4-2, best cost 87.9168 + 2562.46 = 2650.38 over 29 frames.
+nicolas-4-2 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-4-3, best cost 90.2556 + 2535.85 = 2626.11 over 31 frames.
+nicolas-4-3 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-4-4, best cost 87.2269 + 2551.29 = 2638.52 over 30 frames.
+nicolas-4-4 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-5-0, best cost 90.7931 + 2431.01 = 2521.8 over 32 frames.
+nicolas-5-0 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-5-1, best cost 92.8595 + 2931.39 = 3024.24 over 36 frames.
+nicolas-5-1 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-5-2, best cost 89.89 + 2325.04 = 2414.93 over 29 frames.
+nicolas-5-2 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-5-3, best cost 92.0476 + 2689.76 = 2781.8 over 34 frames.
+nicolas-5-3 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-5-4, best cost 92.1291 + 2407.42 = 2499.54 over 33 frames.
+nicolas-5-4 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-6-0, best cost 91.7879 + 1970.32 = 2062.11 over 20 frames.
+nicolas-6-0 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-6-1, best cost 86.2409 + 1975.04 = 2061.28 over 21 frames.
+nicolas-6-1 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-6-2, best cost 94.9479 + 2247.37 = 2342.32 over 24 frames.
+nicolas-6-2 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-6-3, best cost 107.069 + 3355.86 = 3462.93 over 37 frames.
+nicolas-6-3 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-6-4, best cost 115.34 + 3910.2 = 4025.54 over 45 frames.
+nicolas-6-4 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-7-0, best cost 101.863 + 2838.6 = 2940.46 over 35 frames.
+nicolas-7-0 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-7-1, best cost 105.621 + 3661.87 = 3767.49 over 44 frames.
+nicolas-7-1 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-7-2, best cost 105.525 + 3617.05 = 3722.58 over 43 frames.
+nicolas-7-2 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-7-3, best cost 94.5257 + 2818.67 = 2913.2 over 35 frames.
+nicolas-7-3 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-7-4, best cost 106.363 + 3874.36 = 3980.73 over 43 frames.
+nicolas-7-4 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-8-0, best cost 82.4845 + 1820.42 = 1902.91 over 21 frames.
+nicolas-8-0 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-8-1, best cost 82.5961 + 2049.75 = 2132.34 over 21 frames.
+nicolas-8-1 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-8-2, best cost 82.6064 + 1892.26 = 1974.87 over 22 frames.
+nicolas-8-2 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-8-3, best cost 82.8128 + 1958.71 = 2041.52 over 23 frames.
+nicolas-8-3 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-8-4, best cost 83.0408 + 1960.53 = 2043.58 over 24 frames.
+nicolas-8-4 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-9-0, best cost 93.9724 + 3549.26 = 3643.23 over 40 frames.
+nicolas-9-0 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-9-1, best cost 96.8502 + 3658.49 = 3755.34 over 47 frames.
+nicolas-9-1 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-9-2, best cost 94.9773 + 3263.97 = 3358.94 over 42 frames.
+nicolas-9-2 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-9-3, best cost 94.2457 + 3363.21 = 3457.46 over 42 frames.
+nicolas-9-3 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance nicolas-9-4, best cost 92.0797 + 3003.01 = 3095.08 over 34 frames.
+nicolas-9-4 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-0-0, best cost 90.7611 + 3569.83 = 3660.59 over 37 frames.
+theo-0-0 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-0-1, best cost 100.889 + 2956.75 = 3057.63 over 33 frames.
+theo-0-1 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-0-2, best cost 101.247 + 3061.82 = 3163.07 over 32 frames.
+theo-0-2 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-0-3, best cost 88.433 + 2962.5 = 3050.94 over 32 frames.
+theo-0-3 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-0-4, best cost 90.345 + 3239.02 = 3329.37 over 39 frames.
+theo-0-4 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-1-0, best cost 90.261 + 2015.9 = 2106.16 over 22 frames.
+theo-1-0 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-1-1, best cost 88.9598 + 1871.66 = 1960.62 over 21 frames.
+theo-1-1 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-1-2, best cost 87.004 + 1647.19 = 1734.2 over 17 frames.
+theo-1-2 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-1-3, best cost 89.9966 + 2072.83 = 2162.83 over 23 frames.
+theo-1-3 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-1-4, best cost 87.7085 + 1815.27 = 1902.98 over 20 frames.
+theo-1-4 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-2-0, best cost 83.1317 + 2026.86 = 2109.99 over 22 frames.
+theo-2-0 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-2-1, best cost 82.7864 + 1875.19 = 1957.97 over 21 frames.
+theo-2-1 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-2-2, best cost 97.883 + 4802.31 = 4900.19 over 51 frames.
+theo-2-2 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-2-3, best cost 82.1165 + 1689.06 = 1771.18 over 18 frames.
+theo-2-3 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-2-4, best cost 84.3632 + 2180.61 = 2264.97 over 25 frames.
+theo-2-4 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-3-0, best cost 86.8111 + 2140.32 = 2227.13 over 22 frames.
+theo-3-0 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-3-1, best cost 89.0948 + 2468.73 = 2557.82 over 26 frames.
+theo-3-1 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-3-2, best cost 89.6088 + 2459.44 = 2549.05 over 25 frames.
+theo-3-2 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-3-3, best cost 86.8807 + 1958.05 = 2044.93 over 21 frames.
+theo-3-3 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-3-4, best cost 86.6307 + 1769.87 = 1856.5 over 20 frames.
+theo-3-4 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-4-0, best cost 87.1142 + 2225.24 = 2312.36 over 25 frames.
+theo-4-0 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-4-1, best cost 85.4214 + 2043.73 = 2129.15 over 23 frames.
+theo-4-1 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-4-2, best cost 84.3084 + 1809.73 = 1894.03 over 21 frames.
+theo-4-2 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-4-3, best cost 85.3578 + 2111.21 = 2196.56 over 23 frames.
+theo-4-3 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-4-4, best cost 86.7171 + 2383.34 = 2470.06 over 27 frames.
+theo-4-4 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-5-0, best cost 90.6914 + 2398.44 = 2489.14 over 28 frames.
+theo-5-0 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-5-1, best cost 90.2111 + 2273.45 = 2363.66 over 27 frames.
+theo-5-1 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-5-2, best cost 88.2802 + 2069.31 = 2157.59 over 25 frames.
+theo-5-2 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-5-3, best cost 90.5485 + 2297.07 = 2387.61 over 26 frames.
+theo-5-3 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-5-4, best cost 88.7185 + 2130.53 = 2219.24 over 26 frames.
+theo-5-4 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-6-0, best cost 96.3633 + 4276.66 = 4373.02 over 47 frames.
+theo-6-0 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-6-1, best cost 98.4869 + 4196.81 = 4295.29 over 46 frames.
+theo-6-1 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-6-2, best cost 95.9461 + 4351.15 = 4447.09 over 48 frames.
+theo-6-2 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-6-3, best cost 97.303 + 4277.06 = 4374.36 over 46 frames.
+theo-6-3 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-6-4, best cost 97.7173 + 4266.4 = 4364.11 over 46 frames.
+theo-6-4 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-7-0, best cost 99.2597 + 3611.25 = 3710.51 over 41 frames.
+theo-7-0 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-7-1, best cost 97.7499 + 2924.85 = 3022.6 over 34 frames.
+theo-7-1 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-7-2, best cost 89.75 + 2155.34 = 2245.09 over 23 frames.
+theo-7-2 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-7-3, best cost 90.6814 + 2501.8 = 2592.48 over 27 frames.
+theo-7-3 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-7-4, best cost 100.623 + 3632.56 = 3733.18 over 41 frames.
+theo-7-4 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-8-0, best cost 85.8532 + 3123.89 = 3209.74 over 34 frames.
+theo-8-0 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-8-1, best cost 85.0644 + 2805.68 = 2890.75 over 30 frames.
+theo-8-1 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-8-2, best cost 87.8611 + 3195.72 = 3283.58 over 34 frames.
+theo-8-2 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-8-3, best cost 83.9787 + 2335.93 = 2419.91 over 27 frames.
+theo-8-3 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-8-4, best cost 87.7764 + 2904.7 = 2992.48 over 33 frames.
+theo-8-4 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-9-0, best cost 92.9894 + 3117.03 = 3210.02 over 36 frames.
+theo-9-0 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-9-1, best cost 89.6916 + 2633.26 = 2722.95 over 27 frames.
+theo-9-1 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-9-2, best cost 89.177 + 2335.73 = 2424.91 over 26 frames.
+theo-9-2 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-9-3, best cost 96.1878 + 3687.48 = 3783.67 over 43 frames.
+theo-9-3 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance theo-9-4, best cost 92.6462 + 3320.99 = 3413.63 over 42 frames.
+theo-9-4 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-0-0, best cost 92.4464 + 3354.13 = 3446.57 over 37 frames.
+yweweler-0-0 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-0-1, best cost 92.9057 + 2985.54 = 3078.44 over 31 frames.
+yweweler-0-1 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-0-2, best cost 93.1359 + 2724.51 = 2817.64 over 33 frames.
+yweweler-0-2 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-0-3, best cost 90.1105 + 2929.63 = 3019.74 over 34 frames.
+yweweler-0-3 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-0-4, best cost 89.8823 + 2626.41 = 2716.29 over 30 frames.
+yweweler-0-4 zero 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-1-0, best cost 103.017 + 3961.17 = 4064.19 over 40 frames.
+yweweler-1-0 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-1-1, best cost 85.8876 + 1606.09 = 1691.98 over 20 frames.
+yweweler-1-1 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-1-2, best cost 93.6224 + 2718.43 = 2812.05 over 32 frames.
+yweweler-1-2 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-1-3, best cost 93.836 + 2607.41 = 2701.25 over 29 frames.
+yweweler-1-3 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-1-4, best cost 91.9582 + 2460.48 = 2552.44 over 28 frames.
+yweweler-1-4 one 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-2-0, best cost 84.2987 + 2377.11 = 2461.41 over 25 frames.
+yweweler-2-0 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-2-1, best cost 84.2349 + 2879.94 = 2964.18 over 28 frames.
+yweweler-2-1 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-2-2, best cost 85.1949 + 1981.16 = 2066.36 over 22 frames.
+yweweler-2-2 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-2-3, best cost 86.7318 + 2325.38 = 2412.12 over 26 frames.
+yweweler-2-3 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-2-4, best cost 84.5429 + 2299.64 = 2384.18 over 27 frames.
+yweweler-2-4 two 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-3-0, best cost 92.6345 + 3506.06 = 3598.69 over 37 frames.
+yweweler-3-0 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-3-1, best cost 88.9316 + 2692.5 = 2781.43 over 29 frames.
+yweweler-3-1 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-3-2, best cost 85.8654 + 1867.49 = 1953.36 over 23 frames.
+yweweler-3-2 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-3-3, best cost 92.2754 + 3428.62 = 3520.89 over 38 frames.
+yweweler-3-3 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-3-4, best cost 93.3303 + 3509.03 = 3602.36 over 38 frames.
+yweweler-3-4 three 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-4-0, best cost 97.1944 + 3625.23 = 3722.43 over 39 frames.
+yweweler-4-0 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-4-1, best cost 97.5753 + 3352.98 = 3450.56 over 37 frames.
+yweweler-4-1 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-4-2, best cost 88.5996 + 2556.91 = 2645.51 over 31 frames.
+yweweler-4-2 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-4-3, best cost 84.5263 + 2191.85 = 2276.38 over 25 frames.
+yweweler-4-3 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-4-4, best cost 89.325 + 2794.22 = 2883.55 over 33 frames.
+yweweler-4-4 four 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-5-0, best cost 90.9192 + 2405.43 = 2496.34 over 28 frames.
+yweweler-5-0 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-5-1, best cost 103.158 + 3581.93 = 3685.08 over 40 frames.
+yweweler-5-1 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-5-2, best cost 99.2145 + 3066.53 = 3165.74 over 37 frames.
+yweweler-5-2 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-5-3, best cost 102.272 + 3466.46 = 3568.74 over 40 frames.
+yweweler-5-3 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-5-4, best cost 106.952 + 3992.39 = 4099.35 over 48 frames.
+yweweler-5-4 five 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-6-0, best cost 91.6193 + 2775.85 = 2867.46 over 31 frames.
+yweweler-6-0 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-6-1, best cost 82.9896 + 1368.61 = 1451.6 over 14 frames.
+yweweler-6-1 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-6-2, best cost 86.5015 + 1812.98 = 1899.48 over 21 frames.
+yweweler-6-2 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-6-3, best cost 82.1616 + 1072.29 = 1154.46 over 12 frames.
+yweweler-6-3 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-6-4, best cost 84.0874 + 1283.38 = 1367.46 over 16 frames.
+yweweler-6-4 six 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-7-0, best cost 102.85 + 3627.11 = 3729.96 over 42 frames.
+yweweler-7-0 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-7-1, best cost 98.078 + 3260.68 = 3358.76 over 37 frames.
+yweweler-7-1 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-7-2, best cost 100.002 + 3518 = 3618 over 40 frames.
+yweweler-7-2 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-7-3, best cost 102.474 + 3924.18 = 4026.65 over 40 frames.
+yweweler-7-3 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-7-4, best cost 97.7325 + 2944.43 = 3042.16 over 34 frames.
+yweweler-7-4 seven 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-8-0, best cost 84.6696 + 2896.52 = 2981.19 over 30 frames.
+yweweler-8-0 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-8-1, best cost 85.1417 + 2941.47 = 3026.61 over 33 frames.
+yweweler-8-1 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-8-2, best cost 85.6698 + 2356.86 = 2442.53 over 25 frames.
+yweweler-8-2 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-8-3, best cost 84.502 + 2667.4 = 2751.9 over 30 frames.
+yweweler-8-3 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-8-4, best cost 86.7922 + 2858.35 = 2945.14 over 31 frames.
+yweweler-8-4 eight 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-9-0, best cost 93.1314 + 2996.78 = 3089.91 over 34 frames.
+yweweler-9-0 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-9-1, best cost 92.6377 + 2948.59 = 3041.23 over 37 frames.
+yweweler-9-1 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-9-2, best cost 92.2349 + 3012.66 = 3104.9 over 38 frames.
+yweweler-9-2 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-9-3, best cost 110.173 + 5200.14 = 5310.32 over 53 frames.
+yweweler-9-3 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:99) For utterance yweweler-9-4, best cost 94.6903 + 3185.94 = 3280.63 over 40 frames.
+yweweler-9-4 nine 
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:124) Overall cost per frame is 91.8317 = 2.62566 [graph] + 89.206 [acoustic] over 7161 frames.
+LOG (lattice-best-path[5.5.510~1-68cfb]:main():lattice-best-path.cc:128) Done 200 lattices, failed for 0
+# Accounting: time=1 threads=1
+# Ended (code 0) at Mon Oct 14 16:06:51 DST 2019, elapsed time 1 seconds

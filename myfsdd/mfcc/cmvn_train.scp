@@ -1,0 +1,4 @@
+jackson /home/geoph/v2t/kaldi/egs/myfsdd/mfcc/cmvn_train.ark:8
+nicolas /home/geoph/v2t/kaldi/egs/myfsdd/mfcc/cmvn_train.ark:255
+theo /home/geoph/v2t/kaldi/egs/myfsdd/mfcc/cmvn_train.ark:499
+yweweler /home/geoph/v2t/kaldi/egs/myfsdd/mfcc/cmvn_train.ark:747

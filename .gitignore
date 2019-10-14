@@ -1,0 +1,4 @@
+# Ignore wave files
+myfsdd/wave_files/train/*
+myfsdd/wave_files/test/*
+
