@@ -4,6 +4,8 @@
 
 In this dataset we have one digit per wav file. See [here](https://github.com/Jakobovski/free-spoken-digit-dataset) for the data. The wave filename is of the form `{digitLabel}_{speakerName}_{index}.wav` (e.g. 7_jackson_32.wav means that jackson said the number 7 and this was his 32nd try).
 
+__Note: Cloning this repository will not work. Just follow the steps bellow.__
+
 All recordings are 8Khz. Other information about our data:
 
 1. 4 different speakers
