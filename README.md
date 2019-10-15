@@ -134,5 +134,5 @@ We have created the main structure that is based solely on our data. Now, we wil
 `export PATH_TEMP=$PATH_TEMP:...` where with the 3 dots I denote the PATH variable as it would appear if you ran echo PATH but you should delete all the Windows files (the ones that start with `C:\Users\...`.
 Execute the above command before the `run.sh`. In order to accept it go to `path.sh` and change `$PATH` to `$PATH_TEMP` (this export will only last for the current session). 
 
-# Test trained model
+# Test trained model (Work in progress...)
 Let's say we have a new audio file `audio.wav`. This must be a mono channel 8Khz audio file. In order to convert it, we will use SoX. At first make sure whether there is a need to change the above with `soxi audio.wav`. If *Channels* is 1 and *Sample Rate* is 8000 then we are ok. Otherwise, use `sox -t wav audio.wav -c 1 -r 8000 -t wav > audio.wav`.
