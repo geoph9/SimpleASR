@@ -1,6 +1,6 @@
 # SimpleASR
 
-## 1st Try: Free Spoken Digits Dataset with Kaldi
+## Free Spoken Digits Dataset with Kaldi
 
 In this dataset we have one digit per wav file. See [here](https://github.com/Jakobovski/free-spoken-digit-dataset) for the data. The wave filename is of the form `{digitLabel}_{speakerName}_{index}.wav` (e.g. 7_jackson_32.wav means that jackson said the number 7 and this was his 32nd try).
 
@@ -42,7 +42,9 @@ Metadata as of 14th of October 2019:
 
 ## Steps
 
-We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dummies.html) tutorial steps. We assume an already installed kaldi system. (A basic prerequisite is that you are also using a Linux system. I am using a Linux subsystem inside my Windows 10 distribution.)
+We will be using the [Kaldi for dummies](http://kaldi-asr.org/doc/kaldi_for_dummies.html) tutorial steps. 
+
+__NOTE: We assume that you have already successfully installed kaldi. A basic prerequisite is that you are also using a Linux system. I am using a Linux subsystem inside my Windows 10 distribution. If not, check [here](http://jrmeyer.github.io/asr/2016/01/26/Installing-Kaldi.html).
 
 1. Clone the [FSDD](https://github.com/Jakobovski/free-spoken-digit-dataset) repository somewhere locally (I cloned it at `~/github`).
 2. Go to `kaldi/egs` directory and create a new directory. I will be using the name `myfsdd`.
