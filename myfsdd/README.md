@@ -64,26 +64,32 @@ __NOTE:__ Whenever I do not mention the current working directory, I suppose tha
    ```
 4. Run `put_users_to_folders.py` in order to distribute the audio files.
 5. Run `ln -s ../wsj/s5/utils/ .` to create a symbolic links to the kaldi utilities. After that run `cp ../wsj/s5/path.sh .`. We also need to create a symbolic link to the `steps` folder. Do that by `ln -s ../wsj/s5/steps/ .`. We will need those later.
-6. Run `mkdir data` and then `mkdir data/train` and `mkdir data/test`
-7. Create a `spk2gender` file as shown in this repo and copy it to both `data/train` and `data/test`.
-8. Run `create_train_wavscp.py full_path_to_train`. For me `full_path_to_train` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/train`. Then  run `create_test_wavscp.py full_path_to_test`. For me `full_path_to_test` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/test`. After running those two you should see 1800 lines in `data/train/wav.scp` and 200 lines in `data/test/wav.scp`.
-9. Copy `number_transcript.py` to your current working directory and then run the `create_train_text.py` and `create_test_text.py` with an argument `full_path_to_train` and `full_path_to_test` as before. (e.g. `create_train_text.py /home/geoph/v2t/kaldi/egs/myfsdd/data/test`. This will create a `text` file in `./data/train` and `./data/test/`. The format of the text file is `utteranceID number` (e.g. `0_jackson_12 zero`)
-10. Next step is to create a `utt2spk` file in both `data/train` and `data/test`. For this, run `python create_utt2spk.py [train/test]`. Do this twice once with `train` and with `test` (i.e. `python create_utt2spk.py train` and `python create_utt2spk.py test`)
-> Instead of step 12 use the below version which provides sorted output (kaldi needs the output to be sorted):
+6. Run `mkdir data` and then `mkdir data/train` and `mkdir data/test`.
+7. Create a `spk2gender` file as shown in this repo and copy it to both `data/train` and `data/test`. The format should be: `speakerID gender` where gender is either `m` or `f`.
+8. Run `create_train_wavscp.py full_path_to_train`. For me `full_path_to_train` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/train`. Then  run `create_test_wavscp.py full_path_to_test`. For me `full_path_to_test` is `/home/geoph/v2t/kaldi/egs/myfsdd/data/test`. After running those two you should see 1800 lines in `data/train/wav.scp` and 200 lines in `data/test/wav.scp`. 
 
-For the train data:
-``` 
-cat data/train/wav.scp | cut -f 1 -d ' ' | \ 
-perl -ane 'chomp; @F = split "-", $_; print $_ . " " . @F[0] . "\n";' > data/train/utt2spk
-```
-For the test data:
-```
-cat data/test/wav.scp | cut -f 1 -d ' ' | perl -ane 'chomp; @F = split "-", $_; print $_ . " " . @F[0] . "\n";' > data/test/utt2spk
-```
+    This `wav.scp` file follows the following pattern: `recordingID full_path_to_audio`. For us, `recordingID` is the same as `utteranceID` since in our audio samples we only have 1 word per audio.
+9. Copy `number_transcript.py` to your current working directory and then run the `create_train_text.py` and `create_test_text.py` with an argument `full_path_to_train` and `full_path_to_test` as before. (e.g. `create_train_text.py /home/geoph/v2t/kaldi/egs/myfsdd/data/test`. This will create a `text` file in `./data/train` and `./data/test/`. The format of the text file is `utteranceID number` (e.g. `0_jackson_12 zero`). The format of the `text` file is: `utteranceID text` where `text` denotes the transcription for that utterance.
+10. Next step is to create a `utt2spk` file in both `data/train` and `data/test`. 
+
+    This file follows the pattern: `utteranceID speakerID`. 
+
+    Run `./create_utt2spk.sh train` and `./create_utt2spk.sh test` in order to create a sorted `utt2spk` file.
+    > If this step won't work then use the below version which provides sorted output (kaldi needs the output to be sorted):
+
+    For the train data:
+    ```     
+    cat data/train/wav.scp | cut -f 1 -d ' ' | \ 
+    perl -ane 'chomp; @F = split "-", $_; print $_ . " " . @F[0] . "\n";' > data/train/utt2spk
+    ```
+    For the test data:
+    ```
+    cat data/test/wav.scp | cut -f 1 -d ' ' | perl -ane 'chomp; @F = split "-", $_; print $_ . " " . @F[0] . "\n";' > data/test/utt2spk
+    ```
     
 11. Now, we need to create the `corpus.txt` file that contains our corpus (numbers from 0 to 9). **NOTE:** This stored in a new directory `./data/local/` which you need to create (`mkdir ./data/local`). Since in each audio file we only have one number, it is really easy to create this file by hand. Check the `corpus.txt` in this repo.
 
-12. Run `utils/fix_data_dir.sh data/train` and `utils/fix_data_dir.sh data/test` in order to make sure that everything is in a kaldi-readable format.
+12. Run `utils/fix_data_dir.sh data/train` and `utils/fix_data_dir.sh data/test` in order to make sure that everything is in a kaldi-readable format. This will also create a file `spk2utt` which is of the format: `speakerID utt1ID utt2ID ... `.
 
 13. Run `utils/validate_data_dir.sh data/train` and `utils/validate_data_dir.sh data/test` in order to make sure that everything is okay. If step 12 was successful then you shouldn't have any problem here.
 
