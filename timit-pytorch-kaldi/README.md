@@ -6,6 +6,8 @@ You also need make sure that you have installed python, pip, pytorch (with CUDA 
 
 [Pytorch-Kaldi](https://github.com/mravanelli/pytorch-kaldi) recommends to use either version 1.0 or 0.4 of PyTorch.
 
+__NOTE:__ The following will train a very simple MLP which won't provide great results.
+
 ## Getting the TIMIT dataset
 
 1. I have downloaded TIMIT from this [github repo](https://github.com/philipperemy/timit) since the official dataset from LDC is not freely available unless you have membership. 
@@ -60,7 +62,7 @@ Pytorch-Kaldi uses `configparse` in order to parse configuration files. Go to th
 
 3. If you are not using CUDA then change `use_cuda` to `False` in the 9th line of `TIMIT_MLP_mfcc_basic.cfg`.
 
-In order to see how to config files should be formed in general check the [description of the configuration files](https://github.com/mravanelli/pytorch-kaldi#description-of-the-configuration-files) from their repository.
+In order to see how to config files should be formed in general check the [description of the configuration files](https://github.com/mravanelli/pytorch-kaldi#description-of-the-configuration-files) from their repository. If you get stuck you may check my configuration file which I have uploaded.
 
 ## Run Experiment
 
