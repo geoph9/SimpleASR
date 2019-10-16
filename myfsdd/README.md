@@ -49,7 +49,7 @@ __NOTE:__ Whenever I do not mention the current working directory, I suppose tha
 
 ## Creating Kaldi files
 
-1. Copy the `recordings` directory of the github repo above in the `myfsdd` and rename it to `wave_files`.
+1. Create a new `wave_files` (`mkdir wave_files`) directory where you will put all of the recordings. Let's say that your recordings from the FSDD repository where saved at `~/github/free-spoken-digit-dataset/recordings`. Then you should do `cp ~/github/free-spoken-digit-dataset/recordings /path/to/kaldi/egs/myfsdd`.
 2. Use the `split_train_test.py` script in order to split into train and test (as mentioned above).
 3. Create 4 subdirectories in each of the `train` and `test` directories with the names of the speakers (yweweler, nicholas, jackson, theo):
    ```
