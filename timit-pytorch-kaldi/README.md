@@ -32,3 +32,36 @@ You also need make sure that you have installed python, pip, pytorch (with CUDA 
 6. *(Optional)*: Make sure that `bc` installed (type `bc` to test i). In order to install it (on Debian) do `sudo-apt-get install bc`.
 
 7. Execute `./run.sh` in order to start training. This will take some time and it will produce several files. The training is fully informative, since it prints every steps. Since I did not use DNN training (and only trained a triphone model) I didn't wait for the whole script to finish (no harm in doing so). 
+
+8. If you use DNN then also run `./local/nnet/run_dnn.sh`.
+
+## Computing Alignments
+
+As describer in the [Pytorch-Kaldi](https://github.com/mravanelli/pytorch-kaldi#timit-tutorial) repo, do the following for tri3 alignment:
+    ```
+    steps/align_fmllr.sh --nj 4 data/dev data/lang exp/tri3 exp/tri3_ali_dev
+    steps/align_fmllr.sh --nj 4 data/test data/lang exp/tri3 exp/tri3_ali_test
+    ```
+
+For DNN alignment do:
+    ```
+    steps/nnet/align.sh --nj 4 data-fmllr-tri3/train data/lang exp/dnn4_pretrain-dbn_dnn exp/dnn4_pretrain-dbn_dnn_ali
+    steps/nnet/align.sh --nj 4 data-fmllr-tri3/dev data/lang exp/dnn4_pretrain-dbn_dnn exp/dnn4_pretrain-dbn_dnn_ali_dev
+    steps/nnet/align.sh --nj 4 data-fmllr-tri3/test data/lang exp/dnn4_pretrain-dbn_dnn exp/dnn4_pretrain-dbn_dnn_ali_test
+    ```
+
+## Configuration of Pytorch-Kaldi
+
+Pytorch-Kaldi uses `configparse` in order to parse configuration files. Go to the directory where you installed Pytorch-Kaldi (`cd ~/github/pytorch-kaldi`). 
+
+1. Edit the `cfg/TIMIT_baselines/TIMIT_MLP_mfcc_basic.cfg` file. Change every path to start with the kaldi root directory plus the timit example. In my case `/home/geoph/v2t/kaldi/egs/timit/s5/` (Replace with your own full path). 
+
+2. Change `dnn4_pretrain_dnn...` (where the `...` mean *followed by anything*) to `tri3...` if you want to use the tri3 model.
+
+3. If you are not using CUDA then change `use_cuda` to `False` in the 9th line of `TIMIT_MLP_mfcc_basic.cfg`.
+
+In order to see how to config files should be formed in general check the [description of the configuration files](https://github.com/mravanelli/pytorch-kaldi#description-of-the-configuration-files) from their repository.
+
+## Run Experiment
+
+In `~/github/pytorch-kaldi` (`cd` there) run `python run_exp.py cfg/TIMIT_baselines/TIMIT_MLP_mfcc_basic.cfg`. This will train TIMIT in chunks. Expect it to take a lot of time (especially if you are not training on GRU).
