@@ -14,6 +14,6 @@ the already trained Greek model from [alphacephei](https://alphacephei.com/vosk/
 If you are on Windows then you may try WSL. When I created the first directories I was using WSL but some things have changed
 and I am not sure if everything will work.
 
-**NOTE2:** I created the first two directories (`fsdd`, `timit`) a really long time ago and I will most probably have made a lot of mistakes.
-I something doesn't run feel free to contact me or make a PR.
+**NOTE2:** I created the first two directories (`fsdd`, `timit`) a really long time ago and I have most probably made a lot of mistakes.
+If something doesn't run feel free to contact me or make a PR (or open an issue and I will fix it).
 

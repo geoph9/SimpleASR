@@ -1,4 +1,4 @@
-# Train on TIMIT using pytorch-kaldi
+# Training with pytorch-kaldi
 
 In this tutorial I will be using the TIMIT dataset and I will be following the steps from [Pytorch-Kaldi](https://github.com/mravanelli/pytorch-kaldi) on how to train TIMIT. A basic prerequisite is that you have already successfully installed kaldi. I have tested the following only in a Debian 9 Windows Subsystem. 
 
