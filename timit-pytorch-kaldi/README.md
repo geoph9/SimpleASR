@@ -56,14 +56,14 @@ For DNN alignment do:
 
 Pytorch-Kaldi uses `configparse` in order to parse configuration files. Go to the directory where you installed Pytorch-Kaldi (`cd ~/github/pytorch-kaldi`). 
 
-1. Edit the `cfg/TIMIT_baselines/TIMIT_MLP_mfcc_basic.cfg` file. Change every path to start with the kaldi root directory plus the timit example. In my case `/home/geoph/v2t/kaldi/egs/timit/s5/` (Replace with your own full path). 
+1. Edit the `cfg/TIMIT_baselines/TIMIT_MLP_mfcc_basic_adjusted.cfg` file. Change every path to start with the kaldi root directory plus the timit example. In my case `/home/geoph/v2t/kaldi/egs/timit/s5/` (Replace with your own full path). 
 
 2. Change `dnn4_pretrain_dnn...` (where the `...` mean *followed by anything*) to `tri3...` if you want to use the tri3 model.
 
-3. If you are not using CUDA then change `use_cuda` to `False` in the 9th line of `TIMIT_MLP_mfcc_basic.cfg`.
+3. If you are not using CUDA then change `use_cuda` to `False` in the 9th line of `TIMIT_MLP_mfcc_basic_adjusted.cfg`.
 
 In order to see how to config files should be formed in general check the [description of the configuration files](https://github.com/mravanelli/pytorch-kaldi#description-of-the-configuration-files) from their repository. If you get stuck you may check my configuration file which I have uploaded.
 
 ## Run Experiment
 
-In `~/github/pytorch-kaldi` (`cd` there) run `python run_exp.py cfg/TIMIT_baselines/TIMIT_MLP_mfcc_basic.cfg`. This will train TIMIT in chunks. Expect it to take a lot of time (especially if you are not training on GRU).
+In `~/github/pytorch-kaldi` (`cd` there) run `python run_exp.py cfg/TIMIT_baselines/TIMIT_MLP_mfcc_basic_adjusted.cfg`. This will train TIMIT in chunks. Expect it to take a lot of time (especially if you are not training on GRU).
