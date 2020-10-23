@@ -14,29 +14,30 @@ The test set officially consists of the first 10% of the recordings. Recordings 
 
 ## Metadata 
 Metadata as of 14th of October 2019:
-  ```metadata = {
-      'jackson': {
-          'gender': 'male',
-          'accent': 'USA/neutral',
-          'language': 'english'
+```json
+{
+      "jackson": {
+          "gender": "male",
+          "accent": "USA/neutral",
+          "language": "english"
       },
-      'nicolas': {
-        'gender': 'male',
-        'accent': 'BEL/French',
-        'language': 'english'
+      "nicolas": {
+        "gender": "male",
+        "accent": "BEL/French",
+        "language": "english"
       },
-      'theo': {
-        'gender': 'male',
-        'accent': 'USA/neutral',
-        'language': 'english'
+      "theo": {
+        "gender": "male",
+        "accent": "USA/neutral",
+        "language": "english"
       },
-      'yweweler': {
-        'gender': 'male',
-        'accent': 'DEU/German',
-        'language': 'english'
+      "yweweler": {
+        "gender": "male",
+        "accent": "DEU/German",
+        "language": "english"
       }
   }
-  ```
+```
 
 ## First Steps
 
